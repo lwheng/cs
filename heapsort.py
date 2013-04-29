@@ -34,3 +34,4 @@ random.shuffle(A)
 print datetime.now()
 heapsort(A)
 print datetime.now()
+print A
