@@ -20,6 +20,7 @@ def buildheap(A):
 
 def heapsort(A):
   buildheap(A)
+  print A
   for i in xrange(len(A)-1, 0, -1):
     temp = A[0]
     A[0] = A[i]
@@ -28,7 +29,7 @@ def heapsort(A):
 
 import random
 from datetime import datetime
-A = range(1,1000)
+A = range(1,100)
 random.shuffle(A)
 print datetime.now()
 heapsort(A)
